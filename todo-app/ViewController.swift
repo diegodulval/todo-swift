@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTask {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTask,ChangeButton {
     
     @IBOutlet weak var tableView: UITableView!
     var tasks: [Task] = []
     
     func addTask(name: String) {
         tasks.append( Task( name: name ) )
+        tableView.reloadData()
+    }
+    
+    func changeButton(checked: Bool, index: Int) {
+        tasks[index].checked = checked
         tableView.reloadData()
     }
     
@@ -34,10 +39,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.taskNameLabel.text = tasks[indexPath.row].name
         
         if tasks[indexPath.row].checked {
-            cell.checkBoxOutlet.setBackgroundImage(#imageLiteral(resourceName: "checkBoxFILLED "), for: UIControl.State.normal)
+            cell.checkBoxOutlet.setBackgroundImage(#imageLiteral(resourceName: "checkBoxFILLED"), for: UIControl.State.normal)
         } else {
             cell.checkBoxOutlet.setBackgroundImage(#imageLiteral(resourceName: "checkBoxOUTLINE "), for: UIControl.State.normal)
         }
+        
+        cell.delegate = self
+        cell.indexP = indexPath.row
+        cell.tasks = tasks
         
         return cell
     }
