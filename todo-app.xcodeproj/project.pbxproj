@@ -15,6 +15,7 @@
 		314BA375218CA178007EC577 /* todo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA374218CA178007EC577 /* todo_appTests.swift */; };
 		314BA380218CA178007EC577 /* todo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA37F218CA178007EC577 /* todo_appUITests.swift */; };
 		314BA38E218CA5DC007EC577 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA38D218CA5DC007EC577 /* TaskCell.swift */; };
+		314BA390218CB308007EC577 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA38F218CB308007EC577 /* AddTaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		314BA37F218CA178007EC577 /* todo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_appUITests.swift; sourceTree = "<group>"; };
 		314BA381218CA178007EC577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		314BA38D218CA5DC007EC577 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		314BA38F218CB308007EC577 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				314BA366218CA177007EC577 /* Assets.xcassets */,
 				314BA368218CA177007EC577 /* LaunchScreen.storyboard */,
 				314BA36B218CA177007EC577 /* Info.plist */,
+				314BA38F218CB308007EC577 /* AddTaskController.swift */,
 			);
 			path = "todo-app";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				314BA362218CA174007EC577 /* ViewController.swift in Sources */,
 				314BA38E218CA5DC007EC577 /* TaskCell.swift in Sources */,
+				314BA390218CB308007EC577 /* AddTaskController.swift in Sources */,
 				314BA360218CA174007EC577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

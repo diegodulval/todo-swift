@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddTask {
+    
+    @IBOutlet weak var tableView: UITableView!
     var tasks: [Task] = []
     
-    override func viewDidLoad() {
-     
+    func addTask(name: String) {
+        tasks.append( Task( name: name ) )
+        tableView.reloadData()
+    }
+    
+    override func viewDidLoad() { }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddTaskController
+        vc.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,9 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if tasks[indexPath.row].checked {
             cell.checkBoxOutlet.setBackgroundImage(#imageLiteral(resourceName: "checkBoxFILLED "), for: UIControl.State.normal)
-        }else {
+        } else {
             cell.checkBoxOutlet.setBackgroundImage(#imageLiteral(resourceName: "checkBoxOUTLINE "), for: UIControl.State.normal)
-
         }
         
         return cell
