@@ -14,6 +14,7 @@
 		314BA36A218CA177007EC577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314BA368218CA177007EC577 /* LaunchScreen.storyboard */; };
 		314BA375218CA178007EC577 /* todo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA374218CA178007EC577 /* todo_appTests.swift */; };
 		314BA380218CA178007EC577 /* todo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA37F218CA178007EC577 /* todo_appUITests.swift */; };
+		314BA38E218CA5DC007EC577 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BA38D218CA5DC007EC577 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		314BA37B218CA178007EC577 /* todo-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		314BA37F218CA178007EC577 /* todo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_appUITests.swift; sourceTree = "<group>"; };
 		314BA381218CA178007EC577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314BA38D218CA5DC007EC577 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				314BA35F218CA174007EC577 /* AppDelegate.swift */,
 				314BA361218CA174007EC577 /* ViewController.swift */,
 				314BA363218CA175007EC577 /* Main.storyboard */,
+				314BA38D218CA5DC007EC577 /* TaskCell.swift */,
 				314BA366218CA177007EC577 /* Assets.xcassets */,
 				314BA368218CA177007EC577 /* LaunchScreen.storyboard */,
 				314BA36B218CA177007EC577 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				314BA362218CA174007EC577 /* ViewController.swift in Sources */,
+				314BA38E218CA5DC007EC577 /* TaskCell.swift in Sources */,
 				314BA360218CA174007EC577 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
